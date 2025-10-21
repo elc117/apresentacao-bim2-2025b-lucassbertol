@@ -14,7 +14,7 @@
 - Em vez de repetir essa característica em toda classe  (carro, moto e caminhão), você usa a **herança**.
 
 ```java
-// Superclasse (classe pai)
+// Superclasse 
 class Veiculo {
     String cor;
     String motor;
@@ -24,7 +24,7 @@ class Veiculo {
     }
 }
 
-// Subclasse (classe filha) que herda de Veiculo
+// Subclasse que herda de Veiculo
 class Carro extends Veiculo {
     int numeroDePortas;
 
@@ -45,6 +45,8 @@ public class Main {
     }
 }
 ``` 
+![alt text](image.png)
+
 <br>
 
 ## 2. Polimorfismo:
@@ -119,9 +121,8 @@ public class Main {
 
 ## 3. Vantagens em comum:
 
-- **Reutilização de código:** Promove a reutilização de código, pois tem como escrever métodos que funcionam com vários tipos de objetos.
-- **Extensibilidade:** Facilita a adição de novos tipos de objetos sem modificar o código existente.
+- **Reutilização de código** e **Extensibilidade:** 
 
 ## 4. Conclusão:
 
-- Herança é **criar novas classes a partir de uma existente**, enquanto polimorfismo é **usar objetos de classes diferentes de forma adaptável**.
+- Herança **cria novas classes a partir de uma existente**, enquanto polimorfismo **usa objetos de classes diferentes de forma adaptável**.
