@@ -122,6 +122,6 @@ public class Main {
 - **Reutilização de código:** Promove a reutilização de código, pois tem como escrever métodos que funcionam com vários tipos de objetos.
 - **Extensibilidade:** Facilita a adição de novos tipos de objetos sem modificar o código existente.
 
+## 4. Conclusão:
 
-
-
+- Herança é **criar novas classes a partir de uma existente**, enquanto polimorfismo é **usar objetos de classes diferentes de forma adaptável**.
