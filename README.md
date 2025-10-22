@@ -136,7 +136,7 @@ public class Main {
 
 <br>
 
-![payPalgitHubAPI](images/image-5.png)
+<img width="800" height="600" alt="paypalAPI" src="images/image-5.png" />
 
 ## Uso de heranças e polimorfismo:
 
