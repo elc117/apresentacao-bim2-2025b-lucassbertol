@@ -252,6 +252,8 @@ public class Main {
 
 <br>
 
+![emote](images/image-6.png)
+
 # Bibliografia
 
 ANDREA, INF. ELC117 - Aula 22. Disponível em: https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/22/README.md#1
