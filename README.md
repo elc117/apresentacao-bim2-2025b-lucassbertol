@@ -220,3 +220,18 @@ public class Main {
 ## Saída:
 
 ![saída exemplo criado](images/image-2.png)
+
+<br>
+
+# Bibliografia
+
+https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/22/README.md#1
+
+https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/23/README.md#1
+
+https://github.com/paypal/Payouts-Java-SDK/tree/master
+
+https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
+
+
+
