@@ -252,7 +252,10 @@ public class Main {
 
 <br>
 
-![emote](images/image-6.png)
+<img width="100" height="100" alt="image" src="images/image-6.png" />
+
+<br>
+<br>
 
 # Bibliografia
 
