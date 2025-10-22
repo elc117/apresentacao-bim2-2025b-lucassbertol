@@ -193,7 +193,7 @@ public class TokenAuth extends AuthStrategy {
 
 ---
 
-## Por quê abstract?
+## Por que abstract?
 
 - PayPal pode receber dezenas de modos de pagamentos diferentes
 
