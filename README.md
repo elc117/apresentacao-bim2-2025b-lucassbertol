@@ -2,16 +2,12 @@
 ### Aluno: Lucas Salvini Bertol  
 <br>
 
-# TEMA: HERANÇA E POLIMORFISMO EM JAVA + EXEMPLOS PRÁTICOS
+# TEMA: HERANÇA E POLIMORFISMO EM JAVA + EXEMPLO PRÁTICO
 <br>
 
 # **Resumo geral:**
 
 ## 1. Herança:
-
-- Você precisa criar diferentes tipos de veículos para sua empresa, como carros, motos e caminhões e todos eles compartilham de **características em comum**, como por exemplo: **ter rodas**.
-
-- Em vez de repetir essa característica em toda classe  (carro, moto e caminhão), você usa a **herança**.
 
 ```java
 // Superclasse 
@@ -45,13 +41,10 @@ public class Main {
     }
 }
 ``` 
-![alt text](image.png)
 
 <br>
 
 ## 2. Polimorfismo:
-
-- Significa **muitas formas**, permite que **um único objeto seja tratado como se fosse de diferentes tipos**.
 
 ### 2.1. Polimorfismo @Override (de sobreposição):
 
@@ -109,7 +102,7 @@ public class Main {
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
-        // O compilador decide qual método chamar com base nos tipos de argumentos que você passa.
+        // O compilador decide qual método chamar com base nos tipos de argumentos que passar.
 
         System.out.println(calc.somar(2, 3));       // Imprime 5
         System.out.println(calc.somar(2.5, 3.5));   // Imprime 6.0
@@ -118,11 +111,112 @@ public class Main {
 }
 ```
 <br>
+<br>
 
-## 3. Vantagens em comum:
+# PAYPAL
 
-- **Reutilização de código** e **Extensibilidade:** 
+![Logo PayPal](images/image-1.png)
 
-## 4. Conclusão:
+- A empresa de pagamentos PayPal usava um backend em Java até antes de 2013
 
-- Herança **cria novas classes a partir de uma existente**, enquanto polimorfismo **usa objetos de classes diferentes de forma adaptável**.
+- Migraram pro node.js por ser no minimo 35% mais rápido e diminui o tamanho do código quase pela metade(!)
+
+<br>
+
+## Uso de heranças e polimorfismo:
+
+```java
+public abstract class Payment {
+    protected double amount;
+    protected String currency;
+    public abstract boolean process(); 
+}
+
+public class CreditCardPayment extends Payment {
+    private String cardNumber;
+    @Override
+    public boolean process() {
+        // lógica específica para cartão
+        return true;
+    }
+}
+
+public class PayPalBalancePayment extends Payment {
+    private String accountId;
+    @Override
+    public boolean process() {
+        // lógica para saldo interno
+        return true;
+    }
+}
+```
+![classDiagram2](images/image-3.png)
+
+<br>
+<br>
+
+```java
+public abstract class AuthStrategy {
+    public abstract boolean authenticate(User user);
+}
+
+public class PasswordAuth extends AuthStrategy {
+    public boolean authenticate(User user) {
+        // verifica senha
+    }
+}
+
+public class TokenAuth extends AuthStrategy {
+    public boolean authenticate(User user) {
+        // verifica token JWT
+    }
+}
+```
+![classDiagram3](images/image-4.png)
+
+<br>
+<br>
+
+# Exemplo criado:
+
+```java
+abstract class Payment {
+    public abstract void process();
+}
+
+class CreditCardPayment extends Payment {
+    @Override
+    public void process() {
+	System.out.println("[CARTÃO DE CRÉDITO]");
+        System.out.println("Processando transação...");
+        System.out.println("Pagamento autorizado com sucesso!");
+    }
+}
+
+class PayPalPayment extends Payment {
+    @Override
+    public void process() {
+	System.out.println("[PAYPAL]");
+        System.out.println("Pagamento realizado via saldo PayPal.");
+        System.out.println("Enviando recibo para o email do cliente...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payment p1 = new CreditCardPayment();
+        Payment p2 = new PayPalPayment();
+
+        System.out.println("=== Iniciando pagamentos ===\n");
+        p1.process();
+        System.out.println();
+        p2.process();
+        System.out.println("\n=== Pagamentos finalizados ===");
+    }
+}
+
+```
+
+## Saída:
+
+![saída exemplo criado](images/image-2.png)
