@@ -119,7 +119,7 @@ public class Main {
 |------------------------|----------------------|
 | **Mesma assinatura**, comportamento diferente | **Assinaturas diferentes**, mesmo nome |
 | Requer herança | Pode ser na mesma classe |
-| `@Override` | Não usa anotação |
+| `@Override` ou Sem notação | Não usa anotação |
 | `fazerSom()` em Cachorro e Gato | `somar(int, int)` vs `somar(double, double)` |
 
 <br>
@@ -135,6 +135,8 @@ public class Main {
 - Migraram pro node.js por ser no minimo 35% mais rápido e diminui o tamanho do código quase pela metade(!)
 
 <br>
+
+![payPalgitHubAPI](images/image-5.png)
 
 ## Uso de heranças e polimorfismo:
 
@@ -252,13 +254,13 @@ public class Main {
 
 # Bibliografia
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/22/README.md#1
+ANDREA, INF. ELC117 - Aula 22. Disponível em: https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/22/README.md#1
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/23/README.md#1
+ANDREA, INF. ELC117 - Aula 23. Disponível em: https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2025b/main/classes/23/README.md#1
 
-https://github.com/paypal/Payouts-Java-SDK/tree/master
+PAYPAL. Payouts Java SDK. GitHub, 2025. Disponível em: https://github.com/paypal/Payouts-Java-SDK/tree/master
 
-https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
+DEVMEDIA. Encapsulamento, polimorfismo e herança em Java. Disponível em: https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
 
 
 
