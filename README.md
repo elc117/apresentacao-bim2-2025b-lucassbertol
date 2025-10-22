@@ -5,6 +5,8 @@
 # TEMA: HERANÇA E POLIMORFISMO EM JAVA + EXEMPLO PRÁTICO
 <br>
 
+---
+
 # **Resumo geral:**
 
 ## 1. Herança:
@@ -41,6 +43,7 @@ public class Main {
     }
 }
 ``` 
+---
 
 <br>
 
@@ -110,8 +113,18 @@ public class Main {
     }
 }
 ```
+---
+
+| Override (Sobreposição) | Overload (Sobrecarga) |
+|------------------------|----------------------|
+| **Mesma assinatura**, comportamento diferente | **Assinaturas diferentes**, mesmo nome |
+| Requer herança | Pode ser na mesma classe |
+| `@Override` | Não usa anotação |
+| `fazerSom()` em Cachorro e Gato | `somar(int, int)` vs `somar(double, double)` |
+
 <br>
-<br>
+
+---
 
 # PAYPAL
 
@@ -175,6 +188,18 @@ public class TokenAuth extends AuthStrategy {
 ![classDiagram3](images/image-4.png)
 
 <br>
+
+---
+
+## Por quê abstract?
+
+- PayPal pode receber dezenas de modos de pagamentos diferentes
+
+- Sem classe abstrata não teria um padrão nos métodos
+
+- Padronização do código
+
+---
 <br>
 
 # Exemplo criado:
@@ -220,6 +245,8 @@ public class Main {
 ## Saída:
 
 ![saída exemplo criado](images/image-2.png)
+
+---
 
 <br>
 
